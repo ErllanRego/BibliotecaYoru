@@ -1,46 +1,106 @@
 # Linux fundamentals part 1
 
-Erllan Rego, 13 de Novembro de 2022.
+Erllan Rego, 13 de Novembro de 2022
 
 ## Comandos básicos de terminal(Ubuntu)
 
-→**echo**(imprime uma mensagem no terminal, aspas são opcionais)
+### **echo**
 
-Utilização: echo “Olá mundo”
+Imprime uma mensagem no terminal, aspas são opcionais.
 
-Utilização 2: echo Olá mundo
+Exemplo:
 
-→**whoami**(mostra qual usuário está sendo utilizado)
+```bash
+echo “Olá mundo”
+```
 
-Utilização: whoami
+Exemplo 2(sem aspas): 
 
-→**ls**(lista diretórios)
+```bash
+echo Olá mundo
+```
 
-Utilização: ls
+### **whoami**
 
-Utilização(listar diretórios de uma pasta sem precisar estar nela): ls nome_do_diretório
+Mostra qual usuário está sendo utilizado
 
-→**cat**(mostra conteúdo de arquivos de texto)
+Exemplo: 
 
-Utilização: cat exemplo.txt
+```bash
+whoami
+```
 
-→**cd**(se move para diretórios)
+### **ls**
 
-Utilização: cd /pasta_exemplo
+Lista diretórios
 
-→**pwd(**mostra diretório atual)
+Exemplo: 
 
-Utilização: pwd
+```bash
+ls
+```
 
-→**find**(achar diretório ou arquivo)
+Exemplo 2(listar diretórios de uma pasta sem precisar estar nela): 
 
-Utilização: find -name exemplo.txt
+```bash
+ls nome_do_diretório
+```
 
-Utilização 2(com base na extensão do arquivo): find -name *.txt
+### **cat**
 
-→**grep**(achar entrada específica em um arquivo)
+Mostra conteúdo de arquivos de texto
 
-Utilização(entrada entre aspas e o nome do arquivo no final): grep “81.143.211.90” access.log
+Exemplo:
+
+```bash
+ cat exemplo.txt
+```
+
+### **cd**
+
+Se move para diretórios
+
+Exemplo: 
+
+```bash
+cd pasta_exemplo/
+```
+
+### **pwd**
+
+Mostra diretório atual
+
+Exemplo: 
+
+```bash
+pwd
+```
+
+### **find**
+
+Achar diretório ou arquivo
+
+Exemplo:
+
+```bash
+ find -name exemplo.txt
+```
+
+Exemplo 2(com base na extensão do arquivo): 
+
+```bash
+find -name *.txt
+```
+
+### **grep**
+
+Achar entrada específica em um arquivo
+
+Exemplo(entrada entre aspas e o nome do arquivo no final): 
+
+```bash
+grep “81.143.211.90” access.log
+```
 
 ## Operadores
 
@@ -48,6 +108,6 @@ Utilização(entrada entre aspas e o nome do arquivo no final): grep “81.143.2
 
 &&→permite combinar comandos para rodar mais de um por vez.
 
-> → redirecionador, (echo palavra1 > texto.txt). Redireciona um echo para um arquivo de texto, porém sobrepõe o que tiver escrito lá.
+“>” → redirecionador, (echo palavra1 > texto.txt). Redireciona um echo para um arquivo de texto, porém sobrepõe o que tiver escrito lá.
 
->> → faz a mesma coisa do anterior porém não sobrepõe o que já tem escrito no arquivo(echo palavra2 >> texto.txt).
+“>>” → faz a mesma coisa do anterior porém não sobrepõe o que já tem escrito no arquivo(echo palavra2 >> texto.txt).
